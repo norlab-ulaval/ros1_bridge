@@ -1,0 +1,74 @@
+topics:
+  -
+    topic: /warthog_velocity_controller/odom  # Topic name on both ROS 1 and ROS 2
+    type: nav_msgs/msg/Odometry  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /warthog_velocity_controller/cmd_vel  # Topic name on both ROS 1 and ROS 2
+    type: geometry_msgs/msg/Twist  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /mcu/status  # Topic name on both ROS 1 and ROS 2
+    type: warthog_msgs/msg/status  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /left_drive/status/battery_current  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/Float64  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /left_drive/status/battery_voltage  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/Float64  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /right_drive/status/battery_current  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/Float64  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /right_drive/status/battery_voltage  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/Float64  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /doughnut_cmd_vel  # Topic name on both ROS 1 and ROS 2
+    type: geometry_msgs/msg/Twist  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /cmd_vel  # Topic name on both ROS 1 and ROS 2
+    type: geometry_msgs/msg/Twist  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /hri_cmd_vel  # Topic name on both ROS 1 and ROS 2
+    type: geometry_msgs/msg/Twist  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /hri_joy  # Topic name on both ROS 1 and ROS 2
+    type: sensor_msgs/msg/Joy  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /right_drive/status/speed  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/Float64  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /right_drive/velocity  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/Float64  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /left_drive/status/speed  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/Float64  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /left_drive/velocity  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/Float64  # Type of topic to bridge
+    queue_size: 1  # Queue size
+
+  -
+    topic: /chatter_1_to_2  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/String  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /chatter_2_to_1  # Topic name on both ROS 1 and ROS 2
+    type: std_msgs/msg/String  # Type of topic to bridge
+    queue_size: 1  # Queue size
+  -
+    topic: /battery_logs    # Topic name on both ROS 1 and ROS 2
+    type: sysnergie_msgs/msg/BatteryLog  # Type of topic to bridge
+    queue_size: 1

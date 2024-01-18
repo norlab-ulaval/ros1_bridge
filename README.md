@@ -1,3 +1,19 @@
+# WARTHOG Branch
+
+This branch is dedicated to the Norlab's Warthog robot. It includes the config for the parameter_bridge in the `config` folder and the startup script in the `scripts` folder. Currently, the bridge is started on boot with a systemd service called ros-bridge.service, which contains the following: 
+
+```
+[Unit]
+After=network.service
+
+[Service]
+User=root
+ExecStart=/home/robot/bridge_ws/src/ros1_bridge/scripts/start_bridge.sh
+
+[Install]
+WantedBy=default.target
+```
+
 # Bridge communication between ROS 1 and ROS 2
 
 This package provides a network bridge which enables the exchange of messages between ROS 1 and ROS 2.
