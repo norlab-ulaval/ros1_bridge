@@ -9,6 +9,7 @@ After=network.service
 [Service]
 User=root
 ExecStart=/home/robot/bridge_ws/src/ros1_bridge/scripts/start_bridge.sh
+Restart=always
 
 [Install]
 WantedBy=default.target
