@@ -43,6 +43,7 @@ find_ros1_package(std_msgs REQUIRED)
 find_ros1_package(warthog_msgs REQUIRED)
 find_ros1_package(dynamic_reconfigure REQUIRED)
 find_ros1_package(sysnergie_msgs REQUIRED)
+find_ros1_package(theodolite_node_msgs REQUIRED)
 
 # find ROS 1 packages with messages / services
 include(cmake/find_ros1_interface_packages.cmake)

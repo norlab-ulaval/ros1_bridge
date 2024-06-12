@@ -72,3 +72,7 @@ topics:
     topic: /battery_logs    # Topic name on both ROS 1 and ROS 2
     type: sysnergie_msgs/msg/BatteryLog  # Type of topic to bridge
     queue_size: 1
+  -
+    topic: /theodolite_data    # Topic name on both ROS 1 and ROS 2
+    type: theodolite_node_msgs/msg/TheodoliteCoordsStamped  # Type of topic to bridge
+    queue_size: 1
